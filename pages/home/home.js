@@ -5,9 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    name:"coderWhy",
+    age:18,
+    students:[
+      { id: 110, name: 'kobe1', age: 31 },
+      { id: 111, name: 'kobe2', age: 32 },
+      { id: 112, name: 'kobe3', age: 33 },
+      { id: 113, name: 'kobe4', age: 34 },
+    ],
+    counter:0
   },
 
+  handleClick() {
+    // 1、错误做法，值变化，但界面不会刷新
+    // this.data.counter += 1
+
+    //2、正确做法，this.setData()
+    this.setData({
+      counter: this.data.counter + 1
+    })
+  },
+  handleSubClick() {
+    this.setData({
+      counter: this.data.counter - 1
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -1,4 +1,9 @@
 // pages/about/about.js
+
+const app = getApp()  //获取APP产生的实例
+// console.log(app.globalData.name)
+// console.log(app.globalData.age)
+
 Page({
 
   /**
@@ -12,7 +17,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // wx.request({
+    //   url: '',
+    //   success: (res) => {
+    //     console.log(res)
+    //   }
+    // })
   },
 
   /**
@@ -33,14 +43,14 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    // console.log("onUnload")
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+   
   },
 
   /**
